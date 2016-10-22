@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src/index.js -o dist/index.js",
+    "build": "mkdir -p dist && ./node_modules/.bin/babel src/index.js -o dist/index.js",
     "pretest": "npm run build",
     "test": "./node_modules/.bin/tape -r babel-register tests/**/*.spec.js"
   },
