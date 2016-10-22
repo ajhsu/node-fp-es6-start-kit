@@ -1,0 +1,30 @@
+{
+  "name": "node-fp-es6-start-kit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src/index.js -o dist/index.js",
+    "pretest": "npm run build",
+    "test": "./node_modules/.bin/tape -r babel-register tests/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ajhsu/node-fp-es6-start-kit.git"
+  },
+  "author": "AJ Hsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajhsu/node-fp-es6-start-kit/issues"
+  },
+  "homepage": "https://github.com/ajhsu/node-fp-es6-start-kit#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.16.3",
+    "tape": "^4.6.2"
+  }
+}
