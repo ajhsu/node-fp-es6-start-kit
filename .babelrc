@@ -1,6 +1,14 @@
+// NOTE: THIS CONFIGURATION IS FOR GULPFILE.BABEL.JS
+// MORE INFO:
+// https://babeljs.io/docs/usage/babelrc/
 {
-  "presets": ["es2015"],
+  "presets": [
+    "es2015"
+  ],
   "plugins": [
-    "add-module-exports"
+    "add-module-exports",
+    "syntax-async-functions",
+    "transform-regenerator",
+    "transform-object-rest-spread"
   ]
 }
